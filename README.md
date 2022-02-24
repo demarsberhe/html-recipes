@@ -1,1 +1,1 @@
-# html-recipes
+#recipes

@@ -1,0 +1,71 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  /**border: 5px solid black;**/
+  text-align: center;
+
+}
+nav{
+
+}
+nav li a:hover{
+  background: gray;
+
+}
+nav ul{
+  list-style: none;
+  /**border: 5px solid green;**/
+  
+}
+
+#breakfast{
+  text-align: left;
+  /**border: 5px solid gold;**/
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+}
+
+#lunch{
+  /**border: 5px solid pink;**/
+  display: flex;
+  margin: 10px;
+  padding: 10px; 
+}
+#lunch-ingredients{
+
+}
+#lunch ul{
+  list-style: none;
+  flex-wrap: wrap;
+  
+}
+#veggie-wrap-1, 
+#veggie-wrap-2{
+  width: 300px;
+  height: 400px;
+  margin: 5px;
+}
+
+#dinner{
+  /**border: 5px solid blue;**/
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 10px;
+
+}
+#dinner figure{
+  justify-content: space-between;
+}
+footer{
+  /**border: 5px solid gray;**/
+  background: powderblue;
+  margin-top: 10px;
+  
+}
+ 
+

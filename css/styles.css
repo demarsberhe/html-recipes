@@ -80,13 +80,50 @@ footer #meal-breakfast, #meal-lunch, #meal-dinner, #meal-dessert{
 footer #email{
   margin: 10px;
 }
+#dessert-header-images{
+  display: flex; /*display images using flexbox*/
+  justify-content: center; /*center dessert images*/
+  margin: 20px;
+}
+#dessert-main-content h3{
+  text-decoration: underline;
+}
+#dessert-main-content{/*implementation of css-grid*/
+  margin: 20px;/*20px space around table and surrounding html elements (header images and return to home link text*/
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-row-gap: 50px;
+  grid-column-gap: 50px;
+  
+}
+#dessert-main-content figure{ /*center the images under the recipe column*/
+  align-self: center;
+  justify-self: center;
+}
+#dessert-header-images img{ /*statically defined image sizes*/
+  width: 400px;
+  height: 200px;
+}
+#oreo-truffles img{ /*statically defined image sizes*/
+  width: 200px;
+  height: 200px;
+}
 @media (max-width: 800px){/*styling implemented for screen width 800px and less*/
   #breakfast, #lunch, #dinner{
     flex-wrap: wrap; /*wrap elements onto the next line*/
     justify-content: center; /*center all elements within the breakfast, lunch, and dinner containers*/
 
   }
+  /*#dessert-header-images img{
+    justify-content: center;
+  }
+  #dessert-main-content{
+    display: flex;
+    flex-wrap: wrap; /*wrap elements onto the next line*/
 
-}
+  }
+
+
 
 

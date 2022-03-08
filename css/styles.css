@@ -2,70 +2,91 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 body{
-  /**border: 5px solid black;**/
-  text-align: center;
-
+  text-align: center;/**parent container centers all text**/
+  background: #dbdbf0;
 }
 nav{
-
+  margin: 20px; /**20px margin for the navigation menu**/
 }
 nav li a:hover{
   background: gray;
 
 }
-nav ul{
-  list-style: none;
-  /**border: 5px solid green;**/
-  
+ul{
+  list-style: none; /**removes the bullet points from ul li items */
 }
 
 #breakfast{
-  text-align: left;
-  /**border: 5px solid gold;**/
-  display: flex;
-  padding: 10px;
-  margin: 10px;
+  display: flex; /*horizontal layout for breakfast section*/
+  padding: 10px; /*10px of space between breakfast container border and content*/
+  margin: 10px; /*10px of space between the breakfast container and surrounding html elements (breakfast and lunch title*/
+  justify-content: space-around; /**implements space around all elements */
 }
 
+#breakfast img{ /*statically defined image sizes*/
+  width: 200px; 
+  height: 300px;
+}
+
+#breakfast figure{ /**10px of space between each breakfast element**/
+  margin: 20px;
+}
 #lunch{
-  /**border: 5px solid pink;**/
-  display: flex;
-  margin: 10px;
-  padding: 10px; 
-}
-#lunch-ingredients{
+  display: flex; /*horizontal layout of lunch section*/
+  justify-content: center; /*aligns all elements in the center*/
+  margin: 10px; /*10px of space between the lunch container and surrounding html elements (lunch and dinner title)*/
+  padding: 10px; /*10px of space between the border of the lunch container and lunch content*/
 
 }
-#lunch ul{
-  list-style: none;
-  flex-wrap: wrap;
-  
+#dinner figcaption:hover{
+  background: white;
 }
-#veggie-wrap-1, 
-#veggie-wrap-2{
-  width: 300px;
-  height: 400px;
-  margin: 5px;
+#lunch img{ /*statically defined image sizes for lunch images*/
+  width: 200px;
+  height: 300px;
+  margin: 20px; /*20px of space around lunch img elements*/
+ 
 }
 
 #dinner{
-  /**border: 5px solid blue;**/
-  display: flex;
-  justify-content: space-around;
-  margin: 10px;
-  padding: 10px;
-
+  display: flex; /*horizontally displayed dinner elements*/
+  justify-content: space-around; /*space around each element in the dinner container*/
+  margin: 20px; /*20px of space around the dinner container and surrounding html elements (dinner and dessert title)*/
+  padding: 10px; /*10px of space between dinner container border and dinner content*/
+}
+#dinner img{ /*statically defined size of dinner img elements*/
+  width: 200px;
+  height: 200px;
 }
 #dinner figure{
-  justify-content: space-between;
-}
-footer{
-  /**border: 5px solid gray;**/
-  background: powderblue;
-  margin-top: 10px;
+  margin: 20px; /*20px of space around each dinner figure element*/
   
 }
+#dessert{
+  background: #d1d1fa;
+  padding: 20px; /*20px of space between the dessert container border and dessert title/content*/
  
+}
+footer{
+  background: #cdcdfe;
+  padding: 20px; /*20px of space between the footer container border and content*/
+}
+footer #meal-breakfast, #meal-lunch, #meal-dinner, #meal-dessert{
+  margin: 10px;
+}
+footer #email{
+  margin: 10px;
+}
+@media (max-width: 800px){/*styling implemented for screen width 800px and less*/
+  #breakfast, #lunch, #dinner{
+    flex-wrap: wrap; /*wrap elements onto the next line*/
+    justify-content: center; /*center all elements within the breakfast, lunch, and dinner containers*/
+
+  }
+
+}
+
 

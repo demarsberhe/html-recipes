@@ -109,6 +109,16 @@ footer #email{
   width: 200px;
   height: 200px;
 }
+#return-home{
+  margin: 15px;
+}
+#return-home a:hover{
+  background: white;
+}
+#dessert-title{
+  margin-top: 15px;
+}
+
 @media (max-width: 800px){/*styling implemented for screen width 800px and less*/
   #breakfast, #lunch, #dinner{
     flex-wrap: wrap; /*wrap elements onto the next line*/

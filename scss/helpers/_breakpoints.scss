@@ -1,0 +1,28 @@
+@use 'helpers/variables';
+@use 'sass:map';
+
+ @media(max-width: map.get(variables.$breakpoints,'small')){
+   #breakfast, #lunch, #dinner{
+     //apply styling to ids "breakfast","lunch", and "dinner at breakpoint 480px and less
+     //display: flex;
+     flex-direction: column;
+     justify-content: center;
+
+   } 
+    
+  }; 
+
+@media(max-width: map.get(variables.$breakpoints,'medium')){
+    #breakfast, #lunch, #dinner{ //apply styling to ids "breakfast","lunch", and "dinner at breakpoint 720px and less
+    //display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    }
+
+
+  };
+
+
+
+

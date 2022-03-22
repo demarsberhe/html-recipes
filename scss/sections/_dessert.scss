@@ -1,0 +1,46 @@
+@use 'helpers/variables';
+@use 'helpers/mixins';
+
+#dessert{
+  background: #d1d1fa;
+  padding: 20px; /*20px of space between the dessert container border and dessert title/content*/
+ 
+}
+#dessert-header-images{
+  display: flex; /*display images using flexbox*/
+  justify-content: center; /*center dessert images*/
+  margin: 20px;
+}
+#dessert-main-content h3{
+  text-decoration: underline;
+}
+#dessert-main-content{/*implementation of css-grid*/
+  margin: 20px;/*20px space around table and surrounding html elements (header images and return to home link text*/
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-row-gap: 50px;
+  grid-column-gap: 50px;
+  
+}
+#dessert-main-content figure{ /*center the images under the recipe column*/
+  align-self: center;
+  justify-self: center;
+}
+#dessert-header-images img{ /*statically defined image sizes*/
+  width: 400px;
+  height: 200px;
+}
+#oreo-truffles img{ /*statically defined image sizes*/
+  width: 200px;
+  height: 200px;
+}
+#return-home{
+  margin: 15px;
+}
+#return-home a:hover{
+  background: white;
+}
+#dessert-title{
+  margin-top: 15px;
+}

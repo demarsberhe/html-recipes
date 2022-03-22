@@ -1,0 +1,20 @@
+$background-color: #dbdbf0;
+$font-family: 'Montserrat', sans-serif;
+$hover-background-color: lighten(complement(gray), 40%);
+$img-width:200px;
+$img-height:300px;
+$nav-background-color:#d3d3d3;
+$title-margins: 20px 0px;
+$nav-border-style:1px solid gray;
+
+$breakpoints:( //breakpoints map
+  'small': 480px,
+  'medium': 720px,
+  'large': 1200px
+);
+
+//placeholder selector
+%image-size{
+  width: $img-width;
+  height: $img-height;
+}

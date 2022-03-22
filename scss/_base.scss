@@ -1,0 +1,101 @@
+@use 'helpers/variables';
+@use 'helpers/mixins';
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: variables.$font-family;
+}
+
+body{
+  text-align: center;/**parent container centers all text**/
+  background: variables.$background-color; //@use requires use of namespace
+}
+#header{
+  background: rgba(255,255,255, 1);
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  top: 0px;
+  border: variables.$nav-border-style;
+  //justify-content: center;
+  #main-title{
+    //margin: variables.$title-margins;
+    //justify-content: flex-start;
+    position: fixed;
+    left: 5px;
+    top: 10px;
+  }
+  nav {
+    //justify-content: flex-end;
+    position: fixed;
+    right: 5px;
+    top: 10px;
+    
+  
+  ul{
+    //margin: variables.$title-margins;
+    //background: variables.$nav-background-color;
+    //justify-content: flex-end;
+    display: flex;
+    //justify-content: space-around;
+    li{
+      margin: 10px;
+      text-decoration: underline;
+      a{
+        color: black;
+        &:hover{
+          background: variables.$hover-background-color;
+
+      }
+      
+      }
+    }
+  
+    
+  }
+}
+
+
+}
+
+
+
+ul{
+  list-style: none; /**removes the bullet points from ul li items */
+}
+
+
+h2{
+  text-align: center;
+}
+
+footer{
+  background: #cdcdfe;
+  padding: 20px; /*20px of space between the footer container border and content*/
+  border: 5px solid green;
+}
+footer #meal-breakfast, #meal-lunch, #meal-dinner, #meal-dessert{
+  margin: 10px;
+}
+footer #email{
+  margin: 10px;
+}
+
+//@media (max-width: 800px){/*styling implemented for screen width 800px and less*/
+  //#breakfast, #lunch, #dinner{
+    //flex-wrap: wrap; /*wrap elements onto the next line*/
+    //justify-content: center; /*center all elements within the breakfast, lunch, and dinner containers*/
+
+ // }
+  /*#dessert-header-images img{
+    justify-content: center;
+  }
+  #dessert-main-content{
+    display: flex;
+    flex-wrap: wrap; /*wrap elements onto the next line*/
+
+  //}
+

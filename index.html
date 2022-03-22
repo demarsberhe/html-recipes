@@ -4,30 +4,33 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--implements responsive display-->
     <title>Recipes</title>
+    <link rel="stylesheet" href="css/index.css">
     <link rel="icon" href="https://www.healthyeating.org/images/default-source/home-0.0/nutrition-topics-2.0/general-nutrition-wellness/2-2-2-2foodgroups_vegetables_detailfeature.jpg?sfvrsn=226f1bc7_6"> <!--favicon-->
   </head>
   <body>
-    <header>
-      <h1><strong>Best Recipes</strong></h1>
+    <div id="header">
+      <h1 id="main-title"><strong>Best Recipes</strong></h1>
       <nav> <!--navigation menu items-->
         <ul>
           <li><a href="#breakfast">Breakfast</a></li>
           <li><a href="#lunch">Lunch</a></li>
           <li><a href="#dinner">Dinner</a></li>
-          <li><a href="#dessert">Dessert</a></li>
+          <li><a href="dessert.html">Dessert</a></li>
         </ul>
       </nav>
-    </header>
+    </div>
     <main>
+      <h2 id="breakfast-title">Breakfast</h2>
+        <br>
       <section id="breakfast">
-        <h2>Breakfast</h2>
+        <div id="vegan-pancakes">
         <h3><a href="https://cooking.nytimes.com/recipes/1021002-vegan-pancakes">Vegan Pancakes</a></h3>
-        
         <figure>
           <a href="https://cooking.nytimes.com/recipes/1021002-vegan-pancakes"><img src="https://static01.nyt.com/images/2020/04/10/dining/gh-vegan-pancakes/gh-vegan-pancakes-articleLarge.jpg" alt="pancakes"width="400px"height="300px"></a>
           <a href="https://cooking.nytimes.com/"><figcaption>Source: NYTimes Cooking</figcaption></a>
         </figure>
-        <h4>Ingredients:</h4>
+        <div class="ingredients">
+        <h3>Ingredients:</h3>
         <ul>
           <li>1.5 cups of nondairy milk</li>
           <li>2 teaspoons apple cider vinegar or white vinegar</li>
@@ -39,27 +42,39 @@
           <li>0.5 of salt</li>
           <li>Maple syrup or vegan butter (optional)</li>
         </ul>
-        <h4>Steps:</h4>
+      </div>
+      <div class="steps">
+        <h3>Steps:</h3>
         <ol>
           <li>In a medium size bowl, combine the nondairy milk and vinegar. Add 1 tablespoon oil, mix to combine and aside.</li>
           <li>In a large mixing bowl, whisk together the flour, sugar, baking powder, baking soda and salt. Add the wet ingredients to the dry ingredients and mix until no streaks of flour are visible. (A few small clumps in the batter are OK.)</li>
           <li>Oil a griddle or large nonstick skillet and heat it over medium for a few minutes. Avoiding crowding the pan, pour in 1/3 cup portions of batter to make pancakes and let cook until each pancake has formed small bubbles at the surface, 2 to 3 minutes. Flip gently and cook until the pancakes are golden brown on the second side, another 2 to 3 minutes.</li>
           <li>Repeat with all remaining batter, oiling the pan as necessary as you go. Serve with maple syrup, vegan butter or other toppings of choice.</li>
         </ol>
+      </div>
+      </div>
+      <div id="overnight-oats">
         <a href="https://www.pickuplimes.com/recipe/vegan-nutella-overnight-oats-110"><h3>Overnight Oats</h3></a>
         <figure>
           <a href="https://www.pickuplimes.com/recipe/vegan-nutella-overnight-oats-110"><img src="https://cdn.pickuplimes.com/cache/a4/60/a460b1dfad147e2125c462ecfaf37fa9.jpg" alt="oats" width="300px" height="400px"></a>
           <a href="https://www.pickuplimes.com/recipe/vegan-nutella-overnight-oats-110"><figcaption> Source: Pickuplimes.com</figcaption></a>
 
         </figure>
+      </div>
       
       </section>
+      <h2>Lunch</h2>
+      <br>
       <section id="lunch">
-        <h2>Lunch</h2>
-        <a href="https://www.foodiecrush.com/hummus-veggie-wrap-plus-10-heavenly-hummus-recipes-to-make-at-home/"><img src="https://www.foodiecrush.com/wp-content/uploads/2015/05/Hummus-Veggie-Wrap-foodiecrush.com-16.jpg" alt="veggie wrap" width="300px" height="400px"></a>
-        <img src="https://www.foodiecrush.com/wp-content/uploads/2015/05/Hummus-Veggie-Wrap-foodiecrush.com-01.jpg" alt="ingredients" width="300px" height="400px">
-        <br>
-        <caption><a href="https://www.foodiecrush.com/hummus-veggie-wrap-plus-10-heavenly-hummus-recipes-to-make-at-home/">Source: Foodiecrush.com</a></caption>
+        <figure>
+          <a href="https://www.foodiecrush.com/hummus-veggie-wrap-plus-10-heavenly-hummus-recipes-to-make-at-home/"><img src="https://www.foodiecrush.com/wp-content/uploads/2015/05/Hummus-Veggie-Wrap-foodiecrush.com-16.jpg" alt="veggie wrap"></a>
+          <figcaption><a href="https://www.foodiecrush.com/hummus-veggie-wrap-plus-10-heavenly-hummus-recipes-to-make-at-home/">Source: Foodiecrush.com</a></figcaption>
+        </figure>
+        <figure>
+          <a href="https://www.foodiecrush.com"><img src="https://www.foodiecrush.com/wp-content/uploads/2015/05/Hummus-Veggie-Wrap-foodiecrush.com-01.jpg" alt="ingredients"></a>
+          <figcaption><a href="https://www.foodiecrush.com">Source: Foodiecrush.com</a></figcaption>
+        </figure>
+        <div class="ingredients">
         <h3>Ingredients:</h3>
         <ul>
           <li>1 flavored wrap or tortilla </li>
@@ -72,24 +87,25 @@
           <li>Fresh microgreens</li>
           <li>Basil leaves</li>
         </ul>
-
+      </div>
       </section>
+      <h2>Dinner</h2>
+      <br>
       <section id="dinner">
-        <h2>Dinner</h2>
-        <figure style="display:inline-block; margin:0px">
-          <a href="https://themodernproper.com/broccoli-pesto-pasta"><img src="https://images.themodernproper.com/billowy-turkey/production/posts/2020/Broccoli-Pesto-Pasta-7.jpg?w=1200&auto=compress%2Cformat&fit=crop&dm=1599768462&s=1f973289090d6a228c2ee4880d3dcff1"alt="Broccoli Pesto Pasta" width="300px" height="400px"></a>
+        <figure>
+          <a href="https://themodernproper.com/broccoli-pesto-pasta"><img src="https://images.themodernproper.com/billowy-turkey/production/posts/2020/Broccoli-Pesto-Pasta-7.jpg?w=1200&auto=compress%2Cformat&fit=crop&dm=1599768462&s=1f973289090d6a228c2ee4880d3dcff1"alt="Broccoli Pesto Pasta" ></a>
           <a href="https://themodernproper.com/broccoli-pesto-pasta"> <figcaption>Broccoli Pesto Pasta</figcaption></a>
         </figure>
-        <figure style="display:inline-block; margin:0px">
-          <a href="https://themodernproper.com/spring-is-springing"><img src="https://images.themodernproper.com/billowy-turkey/production/posts/2014/grapefruit-salmon-salad-3.jpg?w=1200&auto=compress%2Cformat&fit=crop&dm=1599770175&s=9e9524cd24b63b5e2ef4edb828a64b4c" alt="salmon" width="300px" height="400px"></a>
+        <figure>
+          <a href="https://themodernproper.com/spring-is-springing"><img src="https://images.themodernproper.com/billowy-turkey/production/posts/2014/grapefruit-salmon-salad-3.jpg?w=1200&auto=compress%2Cformat&fit=crop&dm=1599770175&s=9e9524cd24b63b5e2ef4edb828a64b4c" alt="salmon"></a>
           <a href="https://themodernproper.com/spring-is-springing"><figcaption> Salmon</figcaption></a>
         </figure>
-        <figure style="display:inline-block; margin:0px">
+        <figure>
           <a href="https://themodernproper.com/instant-pot-mac-and-cheese"><img src="https://images.themodernproper.com/billowy-turkey/production/posts/2020/instant-pot-mac-and-cheese-8.jpg?w=667&auto=compress%2Cformat&fit=crop&dm=1610374934&s=2870d70bc5aaf7e4173b8aad5b9c63c9" alt="mac and cheese" width="300px" height="400px"></a>
           <a href="https://themodernproper.com/instant-pot-mac-and-cheese"><figcaption>Mac and Cheese</figcaption></a>
         </figure>
-        <figure style="display:inline-block; margin:0px">
-          <a href="https://themodernproper.com/crispy-chicken-stir-fry"><img src="https://images.themodernproper.com/billowy-turkey/production/posts/2019/crispy-chicken-stir-fry-with-blistered-green-beans-9.jpg?w=1200&auto=compress%2Cformat&fit=crop&dm=1613150922&s=63d666fc53aa1abbb0a2269b0f52f099"alt="chicken stir fry" width="300px" height="400px"></a>
+        <figure>
+          <a href="https://themodernproper.com/crispy-chicken-stir-fry"><img src="https://images.themodernproper.com/billowy-turkey/production/posts/2019/crispy-chicken-stir-fry-with-blistered-green-beans-9.jpg?w=1200&auto=compress%2Cformat&fit=crop&dm=1613150922&s=63d666fc53aa1abbb0a2269b0f52f099"alt="chicken stir fry"></a>
           <a href="https://themodernproper.com/crispy-chicken-stir-fry"><figcaption>Chicken Stir Fry</figcaption></a>
         </figure>
       </section>

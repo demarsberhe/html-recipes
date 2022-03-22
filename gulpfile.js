@@ -5,7 +5,7 @@ const{src, dest, watch, series} =require('gulp');
 // require includes the name of the plug-in
 const sass = require('gulp-sass')(require('sass')); //compiles sass code to css
 const prefix = require('gulp-autoprefixer'); //includes required vendor prefixes in final css code
-const cssnano = require('gulp-cssnano'); // compress final css code
+//const cssnano = require('gulp-cssnano'); // compress final css code
 const postcss = require('gulp-postcss'); 
 const sourcemaps = require('gulp-sourcemaps'); // maps sass code to css 
 
@@ -18,7 +18,7 @@ function compilescss(){
   //what the function will do with all files ending with .scss
   .pipe(sass())// run sass
   .pipe(prefix()) //add all required vendor prefixes
-  .pipe(cssnano()) // compress files
+  //.pipe(cssnano()) // compress files
   .pipe(dest('css')) // exit the pipe
   // the destination the compiled, prefixed, and compressed css should be pipped out to
   // final css will be saved to the css folder

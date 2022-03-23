@@ -13,24 +13,43 @@
     justify-content: center;
     align-items: center;
     
-    figure{
+    figure{ // all figures will have a margin of 20px
       margin: 20px;
     }
     }
     #overnight-oats{
       margin-right: 0px;
+      width: 100%; // the overnight oats section will take up 100% of the width instead of 50%
     }
     #vegan-pancakes{
       margin-left: 0px;
-      img{
+      width: 100%; // the vegan pancakes section will take up 100% of the width instead of 50%
+      img{ // images within the vegan pancakes section
         margin: 0px;
         padding: 0px;
         width: 250px;
         height: 200px
     } 
     }
+    #dessert-header-images {
+      img{
+      width: 100%;
+      height: auto;
+      }
+      #brownie-img, #oreo-truffles-img{ /*statically defined image sizes*/
+          display: none;
+       }
+    } 
     #dessert-main-content{
-      display: flex;
+      grid-template-columns: auto; //css grid converts to a one column grid
+      grid-template-rows: auto auto auto auto auto auto;
+      grid-row-gap: 50px;
+      grid-column-gap: 50px;
+      img{
+      width: 100%;
+      height: auto;
+      }
+      
     }
     #veggie-wrap{
       margin-top: 20px;
@@ -38,6 +57,9 @@
     #dessert-title{
       text-align: center;
       padding-left: 0px;
+    }
+    #return-home{
+      text-align: center; // text is shifted to the center
     }
   
   };

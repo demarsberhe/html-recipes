@@ -1,5 +1,4 @@
 @use 'helpers/variables';
-@use 'helpers/mixins';
 
 #breakfast-title{
   margin-top: 100px; // breakfast title is pushed 100px from the top of the page so that it is directly below the navigation bar
@@ -9,6 +8,11 @@
   border: variables.$border-style; 
   .steps ol li {
     margin-left: 20px;
+  }
+  /*statically defined image sizes*/
+  img{
+    @extend %image-size;
+
   }
   
 }
@@ -31,10 +35,5 @@
 .ingredients{
   margin: 10px;
 
-}
-
-#breakfast img{ /*statically defined image sizes*/
-  @extend %image-size;
-  
 }
 

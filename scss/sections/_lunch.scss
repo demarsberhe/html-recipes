@@ -1,5 +1,4 @@
 @use 'helpers/variables';
-@use 'helpers/mixins';
 
 #lunch-title{
   margin-top: 20px;
@@ -11,12 +10,13 @@
   figure{
     margin: 10px;
   }
+  img{ /*statically defined image sizes for lunch images*/
+    @extend %image-size;
+
+  }
 
 }
-#lunch img{ /*statically defined image sizes for lunch images*/
-  @extend %image-size;
- 
-}
+
 #veggie-wrap{
   margin: auto 5px;
 }

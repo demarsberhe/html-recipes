@@ -1,16 +1,33 @@
 @use 'helpers/variables';
 @use 'helpers/mixins';
 
+#dessert-title{
+  background: variables.$header-background-color;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  top: 0px;
+  text-align: left;
+  padding-left: 10px;
+  border: variables.$border-style;
+
+}
 #dessert{
-  background: #d1d1fa;
+  background: variables.$dessert-background-color;
   padding: 20px; /*20px of space between the dessert container border and dessert title/content*/
- 
 }
 #dessert-header-images{
   display: flex; /*display images using flexbox*/
   justify-content: center; /*center dessert images*/
-  margin: 20px;
+  margin-top: 40px;
+  img{
+    width: 150px;
+    height: 50px;
+    margin: 5px;
+  }
+
 }
+
 #dessert-main-content h3{
   text-decoration: underline;
 }
@@ -37,10 +54,15 @@
 }
 #return-home{
   margin: 15px;
-}
-#return-home a:hover{
-  background: white;
-}
-#dessert-title{
-  margin-top: 15px;
+  text-align: right;
+  text-decoration: underline;
+  a{
+    color: black;
+    &:hover{
+      color: variables.$hover-color;
+      text-decoration-color: variables.$hover-color;
+
+  }
+  
+  }
 }

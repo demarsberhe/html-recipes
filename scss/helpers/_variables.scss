@@ -1,12 +1,14 @@
-$background-color: #dbdbf0;
+$background-color: #efdecd;
 $font-family: 'Montserrat', sans-serif;
-$hover-background-color: lighten(complement(gray), 40%);
+$hover-color: lighten(complement(gray), 40%);
 $img-width:200px;
 $img-height:300px;
 $nav-background-color:#d3d3d3;
 $title-margins: 20px 0px;
-$nav-border-style:1px solid gray;
-
+$border-style:1px solid gray;
+$dessert-background-color: lighten(complement(#efdecd),20%);
+$footer-background-color: complement($dessert-background-color);
+$header-background-color: rgba(255,255,255, 1);
 $breakpoints:( //breakpoints map
   'small': 480px,
   'medium': 720px,

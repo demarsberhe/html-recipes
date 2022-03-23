@@ -1,19 +1,23 @@
 @use 'helpers/variables';
 @use 'helpers/mixins';
 
+#dinner-title{
+  margin-top: 20px;
+}
 #dinner{
   display: flex; /*horizontally displayed dinner elements*/
   justify-content: space-around; /*space around each element in the dinner container*/
-  //margin:20px; /*20px of space around the dinner container and surrounding html elements (dinner and dessert title)*/
-  //padding: 10px; /*10px of space between dinner container border and dinner content*/
-  border: 5px solid yellow;
+  border: variables.$border-style;
+  figure{
+    margin: 10px; /*10px of space around each dinner figure element*/
+    figcaption:hover{
+      background: white;
+    }
+
+  }
+  img{ /*statically defined size of dinner img elements*/
+    @extend %image-size;
+  }
 }
-#dinner img{ /*statically defined size of dinner img elements*/
-  @extend %image-size;
-}
-#dinner figure{
-  //margin: 20px; /*20px of space around each dinner figure element*/
-}
-#dinner figcaption:hover{
-  background: white;
-}
+
+

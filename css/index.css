@@ -5,6 +5,7 @@
 
 * {
   margin: 0px;
+  color: black;
   padding: 0px;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
@@ -13,7 +14,7 @@
 body {
   text-align: center;
   /**parent container centers all text**/
-  background: #dbdbf0;
+  background: #efdecd;
 }
 
 #header {
@@ -33,7 +34,7 @@ body {
 #header nav {
   position: fixed;
   right: 5px;
-  top: 10px;
+  top: 15px;
 }
 #header nav ul {
   display: flex;
@@ -46,7 +47,9 @@ body {
   color: black;
 }
 #header nav ul li a:hover {
-  background: #e6e6e6;
+  color: #e6e6e6;
+  -webkit-text-decoration-color: #e6e6e6;
+          text-decoration-color: #e6e6e6;
 }
 
 ul {
@@ -59,10 +62,10 @@ h2 {
 }
 
 footer {
-  background: #cdcdfe;
+  background: white;
   padding: 20px;
   /*20px of space between the footer container border and content*/
-  border: 5px solid green;
+  border: 1px solid gray;
 }
 
 footer #meal-breakfast, #meal-lunch, #meal-dinner, #meal-dessert {
@@ -73,12 +76,10 @@ footer #email {
   margin: 10px;
 }
 
-/*#dessert-header-images img{
-  justify-content: center;
+ol {
+  padding: 20px;
 }
-#dessert-main-content{
-  display: flex;
-  flex-wrap: wrap; /*wrap elements onto the next line*/
+
 #breakfast-title {
   margin-top: 100px;
 }
@@ -86,14 +87,38 @@ footer #email {
 #breakfast {
   display: flex;
   /*horizontal layout for breakfast section*/
-  border: 5px solid black;
+  border: 1px solid gray;
 }
+#breakfast .steps ol li {
+  margin-left: 20px;
+}
+
+#vegan-pancakes, #overnight-oats {
+  margin: 20px;
+  width: 50%;
+}
+
+#overnight-oats {
+  margin-right: 100px;
+}
+
+#vegan-pancakes {
+  margin-left: 100px;
+}
+#vegan-pancakes img {
+  width: 300px;
+}
+
+.ingredients {
+  margin: 10px;
+}
+
 #breakfast img {
   /*statically defined image sizes*/
 }
 
-#breakfast figure {
-  /**10px of space between each breakfast element**/
+#lunch-title {
+  margin-top: 20px;
 }
 
 #lunch {
@@ -101,7 +126,7 @@ footer #email {
   /*horizontal layout of lunch section*/
   justify-content: center;
   /*aligns all elements in the center*/
-  border: 5px solid green;
+  border: 1px solid gray;
 }
 #lunch figure {
   margin: 10px;
@@ -111,24 +136,45 @@ footer #email {
   /*statically defined image sizes for lunch images*/
 }
 
+#veggie-wrap {
+  margin: auto 5px;
+}
+
+#dinner-title {
+  margin-top: 20px;
+}
+
 #dinner {
   display: flex;
   /*horizontally displayed dinner elements*/
   justify-content: space-around;
   /*space around each element in the dinner container*/
-  border: 5px solid yellow;
+  border: 1px solid gray;
 }
-
+#dinner figure {
+  margin: 10px;
+  /*10px of space around each dinner figure element*/
+}
+#dinner figure figcaption:hover {
+  background: white;
+}
 #dinner img {
   /*statically defined size of dinner img elements*/
 }
 
-#dinner figcaption:hover {
+#dessert-title {
   background: white;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  top: 0px;
+  text-align: left;
+  padding-left: 10px;
+  border: 1px solid gray;
 }
 
 #dessert {
-  background: #d1d1fa;
+  background: white;
   padding: 20px;
   /*20px of space between the dessert container border and dessert title/content*/
 }
@@ -138,7 +184,12 @@ footer #email {
   /*display images using flexbox*/
   justify-content: center;
   /*center dessert images*/
-  margin: 20px;
+  margin-top: 40px;
+}
+#dessert-header-images img {
+  width: 150px;
+  height: 50px;
+  margin: 5px;
 }
 
 #dessert-main-content h3 {
@@ -176,29 +227,59 @@ footer #email {
 
 #return-home {
   margin: 15px;
+  text-align: right;
+  text-decoration: underline;
 }
-
+#return-home a {
+  color: black;
+}
 #return-home a:hover {
-  background: white;
+  color: #e6e6e6;
+  -webkit-text-decoration-color: #e6e6e6;
+          text-decoration-color: #e6e6e6;
 }
 
-#dessert-title {
-  margin-top: 15px;
-}
-
-@media (max-width: 480px) {
-  #breakfast, #lunch, #dinner {
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  nav ul {
-    flex-direction: column;
-  }
-}
 @media (max-width: 720px) {
+  #header #main-title {
+    font-size: 20px;
+    position: fixed;
+    top: 30px;
+    left: 20px;
+  }
+
   #breakfast, #lunch, #dinner {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+  }
+  #breakfast figure, #lunch figure, #dinner figure {
+    margin: 20px;
+  }
+
+  #overnight-oats {
+    margin-right: 0px;
+  }
+
+  #vegan-pancakes {
+    margin-left: 0px;
+  }
+  #vegan-pancakes img {
+    margin: 0px;
+    padding: 0px;
+    width: 250px;
+    height: 200px;
+  }
+
+  #dessert-main-content {
+    display: flex;
+  }
+
+  #veggie-wrap {
+    margin-top: 20px;
+  }
+
+  #dessert-title {
+    text-align: center;
+    padding-left: 0px;
   }
 }

@@ -1,12 +1,13 @@
 @use 'helpers/variables';
 @use 'helpers/mixins';
 
+#lunch-title{
+  margin-top: 20px;
+}
 #lunch{
   display: flex; /*horizontal layout of lunch section*/
   justify-content: center; /*aligns all elements in the center*/
-  //margin: 10px; /*10px of space between the lunch container and surrounding html elements (lunch and dinner title)*/
-  //padding: 10px; /*10px of space between the border of the lunch container and lunch content*/
-  border: 5px solid green;
+  border: variables.$border-style;
   figure{
     margin: 10px;
   }
@@ -14,6 +15,8 @@
 }
 #lunch img{ /*statically defined image sizes for lunch images*/
   @extend %image-size;
-  //margin: 20px; /*20px of space around lunch img elements*/
  
+}
+#veggie-wrap{
+  margin: auto 5px;
 }

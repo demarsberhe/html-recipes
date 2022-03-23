@@ -1,26 +1,45 @@
 @use 'helpers/variables';
 @use 'sass:map';
 
- @media(max-width: map.get(variables.$breakpoints,'small')){
-   #breakfast, #lunch, #dinner{
-     //apply styling to ids "breakfast","lunch", and "dinner at breakpoint 480px and less
-     //display: flex;
-     flex-direction: column;
-     justify-content: center;
-
-   } 
-    
-  }; 
-
 @media(max-width: map.get(variables.$breakpoints,'medium')){
+  #header #main-title{
+    font-size: 20px;
+    position: fixed;
+    top: 30px;
+    left: 20px;
+  }
     #breakfast, #lunch, #dinner{ //apply styling to ids "breakfast","lunch", and "dinner at breakpoint 720px and less
-    //display: flex;
     flex-direction: column;
     justify-content: center;
-
+    align-items: center;
+    
+    figure{
+      margin: 20px;
     }
-
-
+    }
+    #overnight-oats{
+      margin-right: 0px;
+    }
+    #vegan-pancakes{
+      margin-left: 0px;
+      img{
+        margin: 0px;
+        padding: 0px;
+        width: 250px;
+        height: 200px
+    } 
+    }
+    #dessert-main-content{
+      display: flex;
+    }
+    #veggie-wrap{
+      margin-top: 20px;
+    }
+    #dessert-title{
+      text-align: center;
+      padding-left: 0px;
+    }
+  
   };
 
 

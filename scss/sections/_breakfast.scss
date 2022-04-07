@@ -1,9 +1,10 @@
 @use 'helpers/variables';
 
 #breakfast-title{
-  margin-top: 100px; // breakfast title is pushed 100px from the top of the page so that it is directly below the navigation bar
+  margin-top: 20px; // breakfast title is pushed 100px from the top of the page so that it is directly below the navigation bar
 }
 #breakfast{
+  z-index: 1;
   display: flex; /*horizontal layout for breakfast section*/
   border: variables.$border-style; 
   .steps ol li {

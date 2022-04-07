@@ -1,4 +1,4 @@
-$background-color: #efdecd;
+$background-color: white;
 $font-family: 'Montserrat', sans-serif;
 $hover-color: lighten(complement(gray), 40%);
 $img-width:200px;
@@ -11,7 +11,7 @@ $footer-background-color: complement($dessert-background-color);
 $header-background-color: rgba(255,255,255, 1);
 $breakpoints:( //breakpoints map
   'small': 480px,
-  'medium': 720px,
+  'medium': 830px,
   'large': 1200px
 );
 

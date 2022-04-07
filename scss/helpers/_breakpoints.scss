@@ -2,6 +2,10 @@
 @use 'sass:map';
 
 @media(max-width: map.get(variables.$breakpoints,'medium')){
+  #main-image img{
+    width:100%;
+    height:auto;
+  }
   #header #main-title{
     font-size: 20px;
     position: fixed;

@@ -94,6 +94,9 @@ ol {
 
 #breakfast-title {
   margin-top: 5px;
+  border: 1px solid gray;
+  border-bottom: none;
+  padding-top: 10px;
 }
 
 #breakfast {

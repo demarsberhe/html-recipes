@@ -65,6 +65,19 @@
     #return-home{
       text-align: center; // text is shifted to the center
     }
+    #search-selectors{
+      margin-top: 150px;
+      h3{
+        font-size: 40px;
+      }
+      #recipe-selected{
+        font-size: 30px;
+      }
+      button{
+        margin-top: 20px;
+      }
+    
+    }
   
   };
 

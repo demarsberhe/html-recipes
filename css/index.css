@@ -323,4 +323,17 @@ ol {
   #return-home {
     text-align: center;
   }
+
+  #search-selectors {
+    margin-top: 150px;
+  }
+  #search-selectors h3 {
+    font-size: 40px;
+  }
+  #search-selectors #recipe-selected {
+    font-size: 30px;
+  }
+  #search-selectors button {
+    margin-top: 20px;
+  }
 }

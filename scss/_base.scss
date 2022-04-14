@@ -7,6 +7,9 @@
   box-sizing: border-box;
   font-family: variables.$font-family;
 }
+.selected-border{
+  border: 2px solid gray;
+}
 #recipe-link{
   margin-top: 20px;
   display: none;

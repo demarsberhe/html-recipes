@@ -11,6 +11,11 @@
   font-family: "Quicksand", sans-serif;
 }
 
+#recipe-link {
+  margin-top: 20px;
+  display: none;
+}
+
 #search {
   height: 15rem;
 }

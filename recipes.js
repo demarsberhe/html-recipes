@@ -13,8 +13,11 @@ function createRecipe(name, mealType){
       }
       
     }
+    
+    
   }
 }
+// recipe objects 
 let veganPancakes = createRecipe('Vegan Pancakes', 'Breakfast');
 let overnightOats = createRecipe('Overnight Oats', 'Breakfast');
 let veggieWrap = createRecipe('Veggie Wrap', 'Lunch');
@@ -25,6 +28,7 @@ let chickenStirFry = createRecipe('Chicken Stir Fry', 'Dinner');
 let oreoCheesecakeBars = createRecipe('Oreo Cheesecake Bars', 'Dessert');
 let oreoTruffles = createRecipe('Oreo Truffles', 'Dessert');
 
+// individual recipe objects have been pushed to the recipes array
 recipes.push(veganPancakes);
 recipes.push(overnightOats);
 recipes.push(veggieWrap);
@@ -35,16 +39,30 @@ recipes.push(chickenStirFry);
 recipes.push(oreoCheesecakeBars);
 recipes.push(oreoTruffles);
 
-console.log(recipes);
 
+//function selects a random recipe from the array
 function generateRandomRecipe(arrayOfRecipes){
   let numOfRecipes = arrayOfRecipes.length;
   let randomNum = Math.round(Math.random()* numOfRecipes);
-  return arrayOfRecipes[randomNum].mealResponse();
+  return arrayOfRecipes[randomNum];
 }
-console.log(generateRandomRecipe(recipes));
+//function returns the section link of the recipe based on meal type
+function setLink(recipe){
+  if(recipe.mealType === 'Breakfast'){
+    document.getElementById('recipe-link').setAttribute('href', '#breakfast');
+  } else if(recipe.mealType === 'Lunch'){
+    document.getElementById('recipe-link').setAttribute('href', '#lunch');
+  } else if(recipe.mealType === 'Dinner'){
+    document.getElementById('recipe-link').setAttribute('href', '#dinner');
+  } else if(recipe.mealType === 'Dessert'){
+    document.getElementById('recipe-link').setAttribute('href', '#dessert');
+  }
+  
+}
 
-console.log(document.getElementById('recipe-selected').innerHTML);
 document.getElementById('recipe-button').addEventListener("click", function(){
-  document.getElementById('recipe-selected').innerHTML = generateRandomRecipe(recipes);
+  let selectedRecipe = generateRandomRecipe(recipes);
+  document.getElementById('recipe-selected').innerHTML = selectedRecipe.mealResponse(); //this updates the '...' text currently on the site with the randomly selected recipe
+  document.getElementById('recipe-link').style.display = 'block'; // this displays the recipe link below the button
+  setLink(selectedRecipe); //the href attribute of the 'Go to recipe!' will update with the corresponding link
 })

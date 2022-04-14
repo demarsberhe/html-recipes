@@ -47,6 +47,9 @@ body{
   border: variables.$border-style;
   #main-title{
     margin: auto auto;
+    a{
+      text-decoration: none;
+    }
   }
   nav {
     position: fixed;
@@ -90,6 +93,12 @@ footer{
     margin: 10px;
   }
 
+}
+#dessert-title{
+  padding-top: 10px 0px;
+  a{
+    text-decoration: none;
+  }
 }
 
 

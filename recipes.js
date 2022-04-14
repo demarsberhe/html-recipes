@@ -61,6 +61,11 @@ function setLink(recipe){
 }
 
 document.getElementById('recipe-button').addEventListener("click", function(){
+  /*document.getElementsByTagName('figcaption').forEach(element =>{
+    if(element.classList.includes('selected-border')){
+      element.classList.remove('selected-border');
+    }
+  })*/
   let selectedRecipe = generateRandomRecipe(recipes);
   document.getElementById('recipe-selected').innerHTML = selectedRecipe.mealResponse(); //this updates the '...' text currently on the site with the randomly selected recipe
   document.getElementById('recipe-link').style.display = 'block'; // this displays the recipe link below the button
@@ -68,4 +73,5 @@ document.getElementById('recipe-button').addEventListener("click", function(){
   document.getElementById('recipe-link').addEventListener('click', function(){
     document.getElementById(`${selectedRecipe.recipeId}`).classList.add('selected-border'); // gray border is applied to the recipe selected by the generator
   })
+
 })

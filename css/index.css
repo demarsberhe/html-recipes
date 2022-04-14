@@ -57,6 +57,9 @@ body {
 #header #main-title {
   margin: auto auto;
 }
+#header #main-title a {
+  text-decoration: none;
+}
 #header nav {
   position: fixed;
   right: 5px;
@@ -95,6 +98,13 @@ footer {
 }
 footer #meal-breakfast, footer #meal-lunch, footer #meal-dinner, footer #meal-dessert, footer #email {
   margin: 10px;
+}
+
+#dessert-title {
+  padding-top: 10px 0px;
+}
+#dessert-title a {
+  text-decoration: none;
 }
 
 ol {

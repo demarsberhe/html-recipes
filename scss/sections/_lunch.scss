@@ -3,7 +3,7 @@
 #lunch-title{
   margin-top: 20px;
 }
-#lunch{
+#veggie-wrap-container{
   display: flex; /*horizontal layout of lunch section*/
   justify-content: center; /*aligns all elements in the center*/
   border: variables.$border-style;
@@ -18,5 +18,11 @@
 }
 
 #veggie-wrap{
-  margin: auto 5px;
+  margin: auto 3rem;
+}
+
+.lunch-ingredients{
+  height: 50%;
+  margin-top: 7.5rem;
+  width: 30%;
 }

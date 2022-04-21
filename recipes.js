@@ -84,54 +84,11 @@ document.getElementById('recipe-button').addEventListener("click", () =>{
   document.getElementById('try-again').style.display = 'inline';
   document.getElementById(`${selectedRecipe.recipeId}`).classList.add('selected-border'); // gray border is applied to the recipe selected by the generator
   //NOTE: this class is not being applied to recipes located on the dessert.html page
-  /*
- 
-
-  //commented out code
-  //document.getElementById(`${selectedRecipe.recipeId}`).classList.add('selected-border'); // gray border is applied to the recipe selected by the generator
-  
-  //if(selectedRecipe.mealType === "Dessert"){
-    //window.location = "dessert.html";
-    
-
-  //} else{
-    //document.getElementById(`${selectedRecipe.recipeId}`).classList.add('selected-border'); // gray border is applied to the recipe selected by the generator
-  //}
-  /*let highlightedElements = document.getElementsByClassName('selected-border');
-  console.log(highlightedElements);
-  console.log(highlightedElements.length);
-  if(highlightedElements.length > 1){
-    console.log(highlightedElements[1].classList);
-    highlightedElements[1].classList.remove('selected-border');
-  }*/
-  //highlightedElements.forEach(element=>{
-    //element.classList.remove('selected-border');
-  //});
-
-  /*let includeClass = idValues.filter(element=>{
-   if(document.getElementById(element).hasClass('selected-border')){
-      return element;
-      
-    }
-  //});
-  includeClass.forEach(element=>{
-    document.getElementById(element).classList.remove('selected-border')
-
-  })*/
-
- 
-    //if(document.getElementById(`"${id}"`).classList.includes('selected-border')){
-      //document.getElementById(`"${id}"`).classList.remove('selected-border')
-      //let idVal = 
-      //console.log(idVal);
-    //}
-  //document.getElementsByTagName('figcaption').forEach(element =>{
-    //if(element.classList.includes('selected-border')){
-      //element.classList.remove('selected-border');
-    //}
-  //}
-  
- 
-
 })
 
+let accordionTitleElements = document.getElementsByClassName("accordion-title"); //populates array of objects of all accordion titles
+for(let i=0; i< accordionTitleElements.length; i++){ //iterates through the array above
+  accordionTitleElements[i].addEventListener("click",()=>{ // adds event listener to list for the action "click"
+    accordionTitleElements[i].classList.toggle('active'); "this toggles the active class on or off depending on the current status"
+  })
+}

@@ -1,4 +1,5 @@
 @use 'helpers/variables';
+@use 'helpers/mixins';
 
 *{
   margin: 0px;
@@ -26,17 +27,66 @@
     font-size: 40px;
     margin-bottom: 10px;
   }
-  button{
-   margin-top: 20px;
-   background-color: lightblue;
-  }
 
+}
+
+#recipe-button{
+  @include mixins.button-style;
+  font-size: 2rem;
 }
 
 #try-again{
   display: none;
+  @include mixins.button-style;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+#recipe-link{
+  font-size: 2rem;
 }
 
+.active{
+  display: block;
+}
+
+.accordion-class{
+  @include mixins.base-accordion-style; //mixin included
+}
+.accordion-title{
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    cursor: pointer;
+   
+    &:hover{
+      background-color: gray;
+    }
+    &:after{
+      content: '+';
+      color: black;
+      font-size: 30px;
+      display: flex;
+
+    }
+    &.active:after{
+      content: '-';
+
+    }
+    &.active + .accordion-body{ //when the accordion title includes the class active, apply display: block styling to the adjancent sibling accordion-body
+      display: block;
+
+    }
+  }
+
+  .accordion-body{
+    padding-top: 1rem;
+    border-top: 5px solid;
+    border-image: linear-gradient(to right, variables.$background-color, transparent) 1;
+    display: none;
+  }
+
+  
 body{
   text-align: center;/**parent container centers all text**/
   background: variables.$background-color; //@use requires use of namespace

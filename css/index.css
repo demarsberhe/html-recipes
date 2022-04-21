@@ -1,4 +1,4 @@
-#dinner img, #lunch img, #breakfast img {
+#dinner img, #veggie-wrap-container img, #breakfast img {
   width: 200px;
   height: 300px;
 }
@@ -34,12 +34,76 @@
   font-size: 40px;
   margin-bottom: 10px;
 }
-#search-selectors button {
-  margin-top: 20px;
-  background-color: lightblue;
+
+#recipe-button {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-top: 1.5rem;
+  background-color: lightgray;
+  font-size: 2rem;
+}
+#recipe-button:hover {
+  background-color: gray;
+  cursor: pointer;
 }
 
 #try-again {
+  display: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-top: 1.5rem;
+  background-color: lightgray;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+#try-again:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+
+#recipe-link {
+  font-size: 2rem;
+}
+
+.active {
+  display: block;
+}
+
+.accordion-class {
+  margin: 0px auto;
+  background-color: lightgrey;
+  border: solid 2px black;
+  border-radius: 0.5rem;
+}
+
+.accordion-title {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.accordion-title:hover {
+  background-color: gray;
+}
+.accordion-title:after {
+  content: "+";
+  color: black;
+  font-size: 30px;
+  display: flex;
+}
+.accordion-title.active:after {
+  content: "-";
+}
+.accordion-title.active + .accordion-body {
+  display: block;
+}
+
+.accordion-body {
+  padding-top: 1rem;
+  border-top: 5px solid;
+  -o-border-image: linear-gradient(to right, white, transparent) 1;
+     border-image: linear-gradient(to right, white, transparent) 1;
   display: none;
 }
 
@@ -117,7 +181,7 @@ ol {
 }
 
 #breakfast-title {
-  margin-top: 5px;
+  margin-top: 1.5rem;
   border: 1px solid gray;
   border-bottom: none;
   padding-top: 10px;
@@ -150,29 +214,35 @@ ol {
 }
 
 .ingredients {
-  margin: 10px;
+  margin-bottom: 10px;
 }
 
 #lunch-title {
   margin-top: 20px;
 }
 
-#lunch {
+#veggie-wrap-container {
   display: flex;
   /*horizontal layout of lunch section*/
   justify-content: center;
   /*aligns all elements in the center*/
   border: 1px solid gray;
 }
-#lunch figure {
+#veggie-wrap-container figure {
   margin: 10px;
 }
-#lunch img {
+#veggie-wrap-container img {
   /*statically defined image sizes for lunch images*/
 }
 
 #veggie-wrap {
-  margin: auto 5px;
+  margin: auto 3rem;
+}
+
+.lunch-ingredients {
+  height: 50%;
+  margin-top: 7.5rem;
+  width: 30%;
 }
 
 #dinner-title {
@@ -290,12 +360,12 @@ ol {
     left: 20px;
   }
 
-  #breakfast, #lunch, #dinner {
+  #breakfast, #veggie-wrap-container, #dinner {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  #breakfast figure, #lunch figure, #dinner figure {
+  #breakfast figure, #veggie-wrap-container figure, #dinner figure {
     margin: 20px;
   }
 
@@ -359,5 +429,10 @@ ol {
   }
   #search-selectors button {
     margin-top: 20px;
+  }
+
+  .lunch-ingredients {
+    margin-top: 2.5rem;
+    width: 100%;
   }
 }

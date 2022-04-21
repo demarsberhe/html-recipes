@@ -12,10 +12,13 @@
     top: 30px;
     left: 20px;
   }
-    #breakfast, #lunch, #dinner{ //apply styling to ids "breakfast","lunch", and "dinner at breakpoint 720px and less
+ 
+  
+    #breakfast, #veggie-wrap-container, #dinner{ //apply styling to ids "breakfast","lunch", and "dinner at breakpoint 720px and less
     flex-direction: column;
     justify-content: center;
     align-items: center;
+   
     
     figure{ // all figures will have a margin of 20px
       margin: 20px;
@@ -78,6 +81,11 @@
       }
     
     }
+    .lunch-ingredients{
+      margin-top: 2.5rem;
+      width: 100%;
+    }
+  
   
   };
 

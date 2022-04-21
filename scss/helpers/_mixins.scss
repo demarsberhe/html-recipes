@@ -1,0 +1,18 @@
+@mixin base-accordion-style{
+  margin: 0px auto;
+  background-color: lightgrey;
+  border: solid 2px black;
+  border-radius: 0.5rem;
+}
+
+@mixin button-style{
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-top: 1.5rem;
+  background-color: lightgray;
+  &:hover{
+    background-color: gray;
+    cursor: pointer;
+  }
+
+}

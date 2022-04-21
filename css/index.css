@@ -36,6 +36,11 @@
 }
 #search-selectors button {
   margin-top: 20px;
+  background-color: lightblue;
+}
+
+#try-again {
+  display: none;
 }
 
 body {

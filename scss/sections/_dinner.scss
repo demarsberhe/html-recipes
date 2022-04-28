@@ -6,7 +6,8 @@
 #dinner{
   display: flex; /*horizontally displayed dinner elements*/
   justify-content: space-around; /*space around each element in the dinner container*/
-  border: variables.$border-style;
+  border-top: variables.$border-style;
+  border-bottom: variables.$border-style;
   figure{
     margin: 10px; /*10px of space around each dinner figure element*/
     figcaption:hover{

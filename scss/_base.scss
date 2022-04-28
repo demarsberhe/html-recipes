@@ -45,15 +45,20 @@
   font-size: 2rem;
 }
 
-.active{
-  display: block;
-}
-
 .accordion-class{
   @include mixins.base-accordion-style; //mixin included
 }
+.accordion-body{
+  padding-top: 1rem;
+  border-top: 5px solid;
+  border-image: linear-gradient(to right, variables.$background-color, transparent) 1;
+  display: none;
+}
+.active{
+  display: block;
+}
 .accordion-title{
-    padding: 0.5rem 3rem 0.5rem 1rem;
+    padding: 0.5rem 2rem 0.5rem 1rem;
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -78,15 +83,7 @@
 
     }
   }
-
-  .accordion-body{
-    padding-top: 1rem;
-    border-top: 5px solid;
-    border-image: linear-gradient(to right, variables.$background-color, transparent) 1;
-    display: none;
-  }
-
-  
+ 
 body{
   text-align: center;/**parent container centers all text**/
   background: variables.$background-color; //@use requires use of namespace
@@ -99,7 +96,7 @@ body{
   min-height: 5rem;
   top: 0;
   justify-content: center;
-  border: variables.$border-style;
+  border-bottom: variables.$border-style;
   #main-title{
     margin: auto auto;
     a{
@@ -143,7 +140,7 @@ h2{
 footer{
   background: variables.$footer-background-color;
   padding: 20px; /*20px of space between the footer container border and content*/
-  border: variables.$border-style;
+  border-top: variables.$border-style;
   #meal-breakfast, #meal-lunch, #meal-dinner, #meal-dessert, #email{
     margin: 10px;
   }

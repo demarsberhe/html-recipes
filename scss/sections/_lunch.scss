@@ -6,7 +6,8 @@
 #veggie-wrap-container{
   display: flex; /*horizontal layout of lunch section*/
   justify-content: center; /*aligns all elements in the center*/
-  border: variables.$border-style;
+  border-top: variables.$border-style;
+  border-bottom: variables.$border-style;
   figure{
     margin: 10px;
   }

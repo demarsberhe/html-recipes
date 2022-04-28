@@ -65,10 +65,6 @@
   font-size: 2rem;
 }
 
-.active {
-  display: block;
-}
-
 .accordion-class {
   margin: 0px auto;
   background-color: lightgrey;
@@ -76,8 +72,20 @@
   border-radius: 0.5rem;
 }
 
+.accordion-body {
+  padding-top: 1rem;
+  border-top: 5px solid;
+  -o-border-image: linear-gradient(to right, white, transparent) 1;
+     border-image: linear-gradient(to right, white, transparent) 1;
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
 .accordion-title {
-  padding: 0.5rem 3rem 0.5rem 1rem;
+  padding: 0.5rem 2rem 0.5rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -99,14 +107,6 @@
   display: block;
 }
 
-.accordion-body {
-  padding-top: 1rem;
-  border-top: 5px solid;
-  -o-border-image: linear-gradient(to right, white, transparent) 1;
-     border-image: linear-gradient(to right, white, transparent) 1;
-  display: none;
-}
-
 body {
   text-align: center;
   /**parent container centers all text**/
@@ -121,7 +121,7 @@ body {
   min-height: 5rem;
   top: 0;
   justify-content: center;
-  border: 1px solid gray;
+  border-bottom: 1px solid gray;
 }
 #header #main-title {
   margin: auto auto;
@@ -163,7 +163,7 @@ footer {
   background: white;
   padding: 20px;
   /*20px of space between the footer container border and content*/
-  border: 1px solid gray;
+  border-top: 1px solid gray;
 }
 footer #meal-breakfast, footer #meal-lunch, footer #meal-dinner, footer #meal-dessert, footer #email {
   margin: 10px;
@@ -182,7 +182,7 @@ ol {
 
 #breakfast-title {
   margin-top: 1.5rem;
-  border: 1px solid gray;
+  border-top: 1px solid gray;
   border-bottom: none;
   padding-top: 10px;
 }
@@ -191,7 +191,8 @@ ol {
   z-index: 1;
   display: flex;
   /*horizontal layout for breakfast section*/
-  border: 1px solid gray;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
   /*statically defined image sizes*/
 }
 #breakfast .steps ol li {
@@ -226,7 +227,8 @@ ol {
   /*horizontal layout of lunch section*/
   justify-content: center;
   /*aligns all elements in the center*/
-  border: 1px solid gray;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
 }
 #veggie-wrap-container figure {
   margin: 10px;
@@ -254,7 +256,8 @@ ol {
   /*horizontally displayed dinner elements*/
   justify-content: space-around;
   /*space around each element in the dinner container*/
-  border: 1px solid gray;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
 }
 #dinner figure {
   margin: 10px;

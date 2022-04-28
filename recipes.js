@@ -40,8 +40,8 @@ recipes.push(oreoCheesecakeBars);
 recipes.push(oreoTruffles);
 
 //recipeId values for each recipe object
-const idValues = recipes.map(recipe=>{return recipe.recipeId});
-console.log(idValues);
+//const idValues = recipes.map(recipe=>{return recipe.recipeId});
+//console.log(idValues);
 
 
 //function selects a random recipe from the array
@@ -62,18 +62,6 @@ function setLink(recipe){
   }
   
 }
-/*function addBorder(recipe){
-  if(recipe.mealType === "Dessert"){
-    document.getElementById('recipe-link').setAttribute('href',`dessert.html#${recipe.recipeId}`);
-    //console.log(recipe.recipeId.classList)
-    //document.getElementById(`${recipe.recipeId}`).classList.add('selected-border'); 
-  } else{
-    document.getElementById('recipe-link').setAttribute('href', `#${recipe.recipeId}`);
-    //document.getElementById(`${recipe.recipeId}`).classList.add('selected-border'); 
-  }
-  
-}*/
-
 
 document.getElementById('recipe-button').addEventListener("click", () =>{
   let selectedRecipe = generateRandomRecipe(recipes);

@@ -1,5 +1,10 @@
 let recipes = [];
 
+let recipesFromAPI =[];
+//create new instances of recipe objects
+
+
+
 //factory function that returns an object
 function createRecipe(name, mealType, recipeId){
   return {

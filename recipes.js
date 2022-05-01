@@ -80,3 +80,18 @@ for(let i=0; i< accordionTitleElements.length; i++){ //iterates through the arra
     accordionTitleElements[i].classList.toggle('active'); "this toggles the active class on or off depending on the current status"
   })
 }
+
+
+const updateRecipesUI = data=>{
+  //update breakfast section
+  const breakfast = data.breakfastData;
+
+  //select two random recipes from the breakfast array
+  let firstBreakfastRecipe = generateRandomRecipe(breakfast.hits);
+  let secondBreakfastRecipe = generateRandomRecipe(breakfast.hits);
+  
+  
+  console.log(breakfast);
+
+
+}
